@@ -18,4 +18,9 @@
 #define kSearchAPI                 @"search.ashx"
 #define kWeatherAPI                @"weather.ashx"
 
+#define kIconURL            @"IconURL"
+#define kObvTime            @"ObsvTime"
+#define kWeatherDescription @"WeatherDesc"
+#define kHumidity           @"Humidity"
+
 #endif /* PGConstants_h */

@@ -14,6 +14,10 @@
 #pragma mark - Operation Manager
 
 + (AFHTTPSessionManager*)sharedSessionManager;
+
+#pragma mark - Fetch Operations
+
 + (void)fetchAutoSuggestionsForText:(NSString*)inputText successCallback:(void (^)(NSArray *locationsArray)) successCallback   errorCallback:(void (^)(NSError * error, NSString *errorMsg)) errorCallback;
++ (void)fetchWeatherDetailForLocation:(NSString*)locationString successCallback:(void (^)(NSDictionary *detailsDict)) successCallback   errorCallback:(void (^)(NSError * error, NSString *errorMsg)) errorCallback;
 
 @end

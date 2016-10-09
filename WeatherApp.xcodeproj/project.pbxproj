@@ -18,6 +18,12 @@
 		734DEAAD1DAA886100CD228A /* PGDataLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 734DEAAC1DAA886100CD228A /* PGDataLocation.m */; };
 		734DEAAE1DAA886100CD228A /* PGDataLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 734DEAAC1DAA886100CD228A /* PGDataLocation.m */; };
 		734DEAAF1DAA886100CD228A /* PGDataLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 734DEAAC1DAA886100CD228A /* PGDataLocation.m */; };
+		734DEAB21DAA9BE200CD228A /* PDDataWeatherDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 734DEAB11DAA9BE200CD228A /* PDDataWeatherDetails.m */; };
+		734DEAB31DAA9BE200CD228A /* PDDataWeatherDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 734DEAB11DAA9BE200CD228A /* PDDataWeatherDetails.m */; };
+		734DEAB41DAA9BE200CD228A /* PDDataWeatherDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 734DEAB11DAA9BE200CD228A /* PDDataWeatherDetails.m */; };
+		734DEAB71DAAA73C00CD228A /* PGWeatherDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 734DEAB61DAAA73C00CD228A /* PGWeatherDetailsViewController.m */; };
+		734DEAB81DAAA73C00CD228A /* PGWeatherDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 734DEAB61DAAA73C00CD228A /* PGWeatherDetailsViewController.m */; };
+		734DEAB91DAAA73C00CD228A /* PGWeatherDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 734DEAB61DAAA73C00CD228A /* PGWeatherDetailsViewController.m */; };
 		73501A3B1DAA48B40073A1F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73501A3A1DAA48B40073A1F6 /* main.m */; };
 		73501A3E1DAA48B50073A1F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73501A3D1DAA48B50073A1F6 /* AppDelegate.m */; };
 		73501A441DAA48B60073A1F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73501A421DAA48B60073A1F6 /* Main.storyboard */; };
@@ -59,6 +65,10 @@
 		734DEAAA1DAA7DE700CD228A /* PGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGConstants.h; sourceTree = "<group>"; };
 		734DEAAB1DAA886100CD228A /* PGDataLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGDataLocation.h; sourceTree = "<group>"; };
 		734DEAAC1DAA886100CD228A /* PGDataLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGDataLocation.m; sourceTree = "<group>"; };
+		734DEAB01DAA9BE200CD228A /* PDDataWeatherDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDDataWeatherDetails.h; sourceTree = "<group>"; };
+		734DEAB11DAA9BE200CD228A /* PDDataWeatherDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDDataWeatherDetails.m; sourceTree = "<group>"; };
+		734DEAB51DAAA73C00CD228A /* PGWeatherDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGWeatherDetailsViewController.h; sourceTree = "<group>"; };
+		734DEAB61DAAA73C00CD228A /* PGWeatherDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGWeatherDetailsViewController.m; sourceTree = "<group>"; };
 		73501A361DAA48AF0073A1F6 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73501A3A1DAA48B40073A1F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73501A3C1DAA48B50073A1F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +141,8 @@
 			children = (
 				734DEA9A1DAA66E300CD228A /* PGLandingViewController.h */,
 				734DEA9B1DAA66E300CD228A /* PGLandingViewController.m */,
+				734DEAB51DAAA73C00CD228A /* PGWeatherDetailsViewController.h */,
+				734DEAB61DAAA73C00CD228A /* PGWeatherDetailsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -140,6 +152,8 @@
 			children = (
 				734DEAAB1DAA886100CD228A /* PGDataLocation.h */,
 				734DEAAC1DAA886100CD228A /* PGDataLocation.m */,
+				734DEAB01DAA9BE200CD228A /* PDDataWeatherDetails.h */,
+				734DEAB11DAA9BE200CD228A /* PDDataWeatherDetails.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -520,11 +534,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				734DEAB21DAA9BE200CD228A /* PDDataWeatherDetails.m in Sources */,
 				734DEAA11DAA705200CD228A /* PGAPICaller.m in Sources */,
 				73501A3E1DAA48B50073A1F6 /* AppDelegate.m in Sources */,
 				734DEA9E1DAA66E300CD228A /* PGLandingViewController.m in Sources */,
 				734DEAAD1DAA886100CD228A /* PGDataLocation.m in Sources */,
 				73501A3B1DAA48B40073A1F6 /* main.m in Sources */,
+				734DEAB71DAAA73C00CD228A /* PGWeatherDetailsViewController.m in Sources */,
 				734DEAA71DAA7D2B00CD228A /* WeatherAppUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +551,8 @@
 			files = (
 				734DEAA81DAA7D2B00CD228A /* WeatherAppUtils.m in Sources */,
 				734DEAAE1DAA886100CD228A /* PGDataLocation.m in Sources */,
+				734DEAB81DAAA73C00CD228A /* PGWeatherDetailsViewController.m in Sources */,
+				734DEAB31DAA9BE200CD228A /* PDDataWeatherDetails.m in Sources */,
 				734DEAA21DAA705200CD228A /* PGAPICaller.m in Sources */,
 				73501A541DAA48B80073A1F6 /* WeatherAppTests.m in Sources */,
 			);
@@ -546,6 +564,8 @@
 			files = (
 				734DEAA91DAA7D2B00CD228A /* WeatherAppUtils.m in Sources */,
 				734DEAAF1DAA886100CD228A /* PGDataLocation.m in Sources */,
+				734DEAB91DAAA73C00CD228A /* PGWeatherDetailsViewController.m in Sources */,
+				734DEAB41DAA9BE200CD228A /* PDDataWeatherDetails.m in Sources */,
 				734DEAA31DAA705200CD228A /* PGAPICaller.m in Sources */,
 				73501A5F1DAA48B80073A1F6 /* WeatherAppUITests.m in Sources */,
 			);

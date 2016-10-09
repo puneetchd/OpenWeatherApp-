@@ -58,7 +58,7 @@ static AFHTTPSessionManager *sharedInstance = nil;
     
 }
 
-+ (void)fetchWeatherDetailForLocation:(NSString*)locationString successCallback:(void (^)(NSArray *locationsArray)) successCallback   errorCallback:(void (^)(NSError * error, NSString *errorMsg)) errorCallback
++ (void)fetchWeatherDetailForLocation:(NSString*)locationString successCallback:(void (^)(NSDictionary *detailsDict)) successCallback   errorCallback:(void (^)(NSError * error, NSString *errorMsg)) errorCallback
 {
     if (![WeatherAppUtils isInternetReachable]) {
         Show_ErrorMessage(kNOInternetMessage);
@@ -71,9 +71,15 @@ static AFHTTPSessionManager *sharedInstance = nil;
     
     [sessionManager GET:[kWeatherAPIBaseURL stringByAppendingString:kWeatherAPI] parameters:parametersDict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        if (responseObject) {
-//            NSArray *responseArray =  [WeatherAppUtils getArrayFromJsonDataUsingORMModel:[[responseObject objectForKey:@"search_api"] objectForKey:@"result"] forClassModel:[PGDataLocation class]];
-//            successCallback(responseArray);
+        if (responseObject)
+        {
+            id mainObj = [[[responseObject objectForKey:@"data"] objectForKey:@"current_condition"] firstObject];
+            NSMutableDictionary *responseDict = [[NSMutableDictionary alloc]init];
+            [responseDict setObject:[mainObj objectForKey:@"observation_time"] forKey:kObvTime];
+            [responseDict setObject:[[[mainObj objectForKey:@"weatherIconUrl"] firstObject] objectForKey:@"value"] forKey:kIconURL];
+            [responseDict setObject:[[[mainObj objectForKey:@"weatherDesc"] firstObject] objectForKey:@"value"] forKey:kWeatherDescription];
+            [responseDict setObject:[mainObj objectForKey:@"humidity"] forKey:kHumidity];
+            successCallback(responseDict);
         }
         else
         {
