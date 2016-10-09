@@ -6,17 +6,26 @@
 //  Copyright © 2016 Puneet Sharma. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "PGLandingViewController.h"
+#import "PGConstants.h"
+#import "PGAPICaller.h"
 
-@interface ViewController ()
+@interface PGLandingViewController ()
 
 @end
 
-@implementation ViewController
+@implementation PGLandingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"Search Weather";
+    
+    [PGAPICaller fetchAutoSuggestionsForText:@"Sing" successCallback:^(NSArray *locationsArray) {
+        
+    } errorCallback:^(NSError *error, NSString *errorMsg) {
+        Show_ErrorMessage(errorMsg);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
