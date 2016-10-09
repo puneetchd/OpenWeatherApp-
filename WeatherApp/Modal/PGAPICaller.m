@@ -58,5 +58,33 @@ static AFHTTPSessionManager *sharedInstance = nil;
     
 }
 
++ (void)fetchWeatherDetailForLocation:(NSString*)locationString successCallback:(void (^)(NSArray *locationsArray)) successCallback   errorCallback:(void (^)(NSError * error, NSString *errorMsg)) errorCallback
+{
+    if (![WeatherAppUtils isInternetReachable]) {
+        Show_ErrorMessage(kNOInternetMessage);
+        return;
+    }
+    
+    AFHTTPSessionManager *sessionManager = [self sharedSessionManager];
+    
+    NSDictionary *parametersDict = @{@"key":kWeatherAPIkey,@"q":locationString,@"format":@"json"};
+    
+    [sessionManager GET:[kWeatherAPIBaseURL stringByAppendingString:kWeatherAPI] parameters:parametersDict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        if (responseObject) {
+//            NSArray *responseArray =  [WeatherAppUtils getArrayFromJsonDataUsingORMModel:[[responseObject objectForKey:@"search_api"] objectForKey:@"result"] forClassModel:[PGDataLocation class]];
+//            successCallback(responseArray);
+        }
+        else
+        {
+            errorCallback(nil,kDefaultErrorMessage);
+        }
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        errorCallback(nil,kDefaultErrorMessage);
+    }];
+    
+}
+
 
 @end
