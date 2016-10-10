@@ -7,11 +7,13 @@
 //
 
 #import "PGAPICaller.h"
-#import "WeatherAppUtils.h"
+#import "PGWeatherAppUtils.h"
 #import "PGConstants.h"
 #import "PGDataLocation.h"
 
 #define kDefaultErrorMessage                @"Something went wrong!"
+#define kJSONFormat                         @"json"
+#define kXMLFormat                          @"xml"
 
 static AFHTTPSessionManager *sharedInstance = nil;
 
@@ -32,19 +34,19 @@ static AFHTTPSessionManager *sharedInstance = nil;
 
 + (void)fetchAutoSuggestionsForText:(NSString*)inputText successCallback:(void (^)(NSArray *locationsArray)) successCallback   errorCallback:(void (^)(NSError * error, NSString *errorMsg)) errorCallback
 {
-    if (![WeatherAppUtils isInternetReachable]) {
+    if (![PGWeatherAppUtils isInternetReachable]) {
         Show_ErrorMessage(kNOInternetMessage);
         return;
     }
     
     AFHTTPSessionManager *sessionManager = [self sharedSessionManager];
     
-    NSDictionary *parametersDict = @{@"key":kWeatherAPIkey,@"q":inputText,@"format":@"json"};
+    NSDictionary *parametersDict = @{@"key":kWeatherAPIkey,@"q":inputText,@"format":kJSONFormat};
     
     [sessionManager GET:[kWeatherAPIBaseURL stringByAppendingString:kSearchAPI] parameters:parametersDict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (responseObject) {
-            NSArray *responseArray =  [WeatherAppUtils getArrayFromJsonDataUsingORMModel:[[responseObject objectForKey:@"search_api"] objectForKey:@"result"] forClassModel:[PGDataLocation class]];
+            NSArray *responseArray =  [PGWeatherAppUtils getArrayFromJsonDataUsingORMModel:[[responseObject objectForKey:@"search_api"] objectForKey:@"result"] forClassModel:[PGDataLocation class]];
             successCallback(responseArray);
         }
         else
@@ -60,14 +62,14 @@ static AFHTTPSessionManager *sharedInstance = nil;
 
 + (void)fetchWeatherDetailForLocation:(NSString*)locationString successCallback:(void (^)(NSDictionary *detailsDict)) successCallback   errorCallback:(void (^)(NSError * error, NSString *errorMsg)) errorCallback
 {
-    if (![WeatherAppUtils isInternetReachable]) {
+    if (![PGWeatherAppUtils isInternetReachable]) {
         Show_ErrorMessage(kNOInternetMessage);
         return;
     }
     
     AFHTTPSessionManager *sessionManager = [self sharedSessionManager];
     
-    NSDictionary *parametersDict = @{@"key":kWeatherAPIkey,@"q":locationString,@"format":@"json"};
+    NSDictionary *parametersDict = @{@"key":kWeatherAPIkey,@"q":locationString,@"format":kJSONFormat};
     
     [sessionManager GET:[kWeatherAPIBaseURL stringByAppendingString:kWeatherAPI] parameters:parametersDict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         

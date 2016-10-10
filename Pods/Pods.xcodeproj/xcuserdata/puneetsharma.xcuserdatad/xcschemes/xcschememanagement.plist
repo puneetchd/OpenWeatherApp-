@@ -8,41 +8,65 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Collection.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Motis.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-WeatherApp-WeatherAppTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Pods-WeatherApp-WeatherAppUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>Pods-WeatherApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-		</dict>
-		<key>Pods-WeatherAppTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-WeatherAppUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6BDB8C8AB5A8423E1A3B247477A51DE9</key>
+		<key>381ED2D885BE76AD500D4303345B56F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A900513BD9C4753A9EFFCA8F031A7ED</key>
+		<key>3E7FE7BE155C3A5D9144BAA6736218AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5FA8FB065AB6BC951CB18F938B9986C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,17 +76,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B8CE0A973F092C4F209C883C2A809607</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B91C2B1C1E9C37A5EBE1C3C6E253F7DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB027198CD70FD2782BC0A2E50E16A1F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C15F50006D72706D29D093CBAB28DAAA</key>
+		<key>BEA67963E934CE4220C3917DF0B16719</key>
 		<dict>
 			<key>primary</key>
 			<true/>

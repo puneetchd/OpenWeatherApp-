@@ -10,14 +10,13 @@ target 'WeatherApp' do
   pod 'AFNetworking', '~> 3.0'
   pod 'Motis', '~>1.4.0'
   pod 'SDWebImage', '~>3.8'
+  pod 'Collection'
 
   target 'WeatherAppTests' do
-    inherit! :search_paths
     # Pods for testing
   end
 
   target 'WeatherAppUITests' do
-    inherit! :search_paths
     # Pods for testing
   end
 

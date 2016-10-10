@@ -35,16 +35,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="khz-53-smM">
+                            <searchBar contentMode="redraw" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="khz-53-smM">
                                 <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="LcA-Fb-6i9"/>
+                                    <constraint firstAttribute="height" constant="44" id="lJa-cZ-1BJ"/>
+                                </constraints>
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="32T-YI-4m7"/>
                                 </connections>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3HX-nt-byL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3HX-nt-byL">
                                 <rect key="frame" x="0.0" y="108" width="320" height="243"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="QyK-bS-K21"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="243" id="hZ0-79-Q1i"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="m4T-op-bOl"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="r85-P9-tR8"/>
@@ -52,6 +60,15 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="khz-53-smM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="5wC-8X-pRN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3HX-nt-byL" secondAttribute="bottom" constant="217" id="8Pv-dh-tR8"/>
+                            <constraint firstItem="3HX-nt-byL" firstAttribute="top" secondItem="khz-53-smM" secondAttribute="bottom" id="AAu-n9-CRh"/>
+                            <constraint firstItem="khz-53-smM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HVw-oU-DJW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3HX-nt-byL" secondAttribute="trailing" constant="-20" id="JrQ-lH-2hQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="khz-53-smM" secondAttribute="trailing" constant="-20" id="Qn5-SZ-QBD"/>
+                            <constraint firstItem="3HX-nt-byL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="f3A-iU-KAe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nwD-jD-aft"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

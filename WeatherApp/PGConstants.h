@@ -13,14 +13,15 @@
 
 #define Show_ErrorMessage(Message) UIAlertView *alert = [[UIAlertView alloc]initWithTitle:Message message:nil delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];[alert show];
 #define kNOInternetMessage         @"No Internet Connection."
+#define kNOResultsMessage          @"Unable to find any mathcing weather location to the query submitted!"
 
 #define kWeatherAPIBaseURL         @"http://api.worldweatheronline.com/premium/v1/"
 #define kSearchAPI                 @"search.ashx"
 #define kWeatherAPI                @"weather.ashx"
 
-#define kIconURL            @"IconURL"
-#define kObvTime            @"ObsvTime"
-#define kWeatherDescription @"WeatherDesc"
-#define kHumidity           @"Humidity"
+#define kIconURL                   @"IconURL"
+#define kObvTime                   @"ObsvTime"
+#define kWeatherDescription        @"WeatherDesc"
+#define kHumidity                  @"Humidity"
 
 #endif /* PGConstants_h */

@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Collection (1.4)
   - Motis (1.4.3)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -21,14 +22,14 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - Collection
   - Motis (~> 1.4.0)
   - SDWebImage (~> 3.8)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Collection: 499c924583128016337272b6e1afb5a58433ff1c
   Motis: c9440ea861d7530d20eb4643adcabd55cfebc44b
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: e5a1422fc6b6ae8d32ec96a724296e071713788d
-
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 0.39.0

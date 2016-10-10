@@ -11,6 +11,8 @@
 #import "PGConstants.h"
 #import "PGAPICaller.h"
 #import "PGDataLocation.h"
+#import <NSArray+Collection.h>
+#import "PGStorageManager.h"
 
 @interface PGLandingViewController ()<UISearchBarDelegate>
 {
@@ -35,6 +37,7 @@
     activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
     [self addProgressIndicator];
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
 }
 
 #pragma mark - UISearchBarDelegate
@@ -42,6 +45,16 @@
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {
     [searchBar setShowsCancelButton:YES animated:YES];
+    NSArray *resultsArray = [[PGStorageManager storageManager] getLastSearchResults];
+    if (resultsArray.count > 10) {
+        locSuggestionsArray = [resultsArray subarrayWithRange:NSMakeRange(0, 10)];
+    }
+    else
+    {
+        locSuggestionsArray = resultsArray;
+    }
+    
+    [_locTableView reloadData];
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
@@ -69,6 +82,21 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
     [searchBar setShowsCancelButton:NO animated:YES];
+    [_searchBar resignFirstResponder];
+    [self.view endEditing:YES];
+    
+    NSArray* matchesArray = [locSuggestionsArray filter:^BOOL(PGDataLocation *locationData) {
+        return [[[locationData.areaName.firstObject objectForKey:@"value"] uppercaseString] isEqualToString:[searchBar.text uppercaseString]];
+    }];
+
+    if (matchesArray.count == 0) {
+        Show_ErrorMessage(kNOResultsMessage);
+    }
+    else
+    {
+        [[PGStorageManager storageManager] addSearchStringToStorage:searchBar.text];
+        [self showWeatherDetailsFor:[matchesArray firstObject]];
+    }
 }
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
@@ -120,15 +148,23 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [_searchBar setShowsCancelButton:NO animated:YES];
+    [_searchBar resignFirstResponder];
+    [self.view endEditing:YES];
     PGDataLocation *dataLocation = [locSuggestionsArray objectAtIndex:indexPath.row];
+    [self showWeatherDetailsFor:dataLocation];
+}
+
+#pragma mark - Misc Functions
+
+- (void)showWeatherDetailsFor:(PGDataLocation*)dataLocation
+{
     PGWeatherDetailsViewController *weatherDetailsVC = [self.storyboard instantiateViewControllerWithIdentifier:@"WeatherDetailsIdentifier"];
     NSString *locationName = [[dataLocation.areaName firstObject] objectForKey:@"value"];
     weatherDetailsVC.title = locationName;
     weatherDetailsVC.locationString = locationName;
     [self.navigationController pushViewController:weatherDetailsVC animated:YES];
 }
-
-#pragma mark - Misc Functions
 
 - (void)addProgressIndicator
 {
