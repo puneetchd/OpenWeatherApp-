@@ -312,6 +312,7 @@
 				73501A4D1DAA48B70073A1F6 /* Resources */,
 				3867FF7EF47B43D31EDC567B /* [CP] Embed Pods Frameworks */,
 				A507B9A3B94A89307782B3A2 /* [CP] Copy Pods Resources */,
+				7368D1251DABA4DC0077C2DC /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -506,6 +507,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeatherAppUITests/Pods-WeatherAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		7368D1251DABA4DC0077C2DC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp-frameworks.sh\"\n";
 		};
 		8240F84E0ED1E93B0D4F9A81 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

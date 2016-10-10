@@ -73,19 +73,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>05E7D9D438AEE8DE353EEF49F74C56EF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>05ECB8E9AE32F759846C3BC418A51973</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -113,13 +100,6 @@
 			<string>Motis.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>069D6DD536E851162E2E2344F2C96E96</key>
-		<dict>
-			<key>fileRef</key>
-			<string>15910324829A55B8B804337266B13764</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>079924233A4C88902FFB7CBA5ED90F8A</key>
 		<dict>
@@ -171,19 +151,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>09AAD64E4F4103400087170C054C1668</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>928353533005A4198EBDA5B700D37B64</string>
-			<key>remoteInfo</key>
-			<string>AFNetworking</string>
-		</dict>
 		<key>0A08FC71C4E3B8E0F8734BCDA7CCA7CB</key>
 		<dict>
 			<key>fileRef</key>
@@ -197,6 +164,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>0B592DEE4E1A1F661D1E38CA1B80726D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-WeatherApp-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0BAD67525EEA6E58FECADB8EB37F4AC4</key>
 		<dict>
@@ -227,19 +207,6 @@
 			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
-		</dict>
-		<key>0E0ED42EEC761F0167EB2942E45C7D30</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>B91C2B1C1E9C37A5EBE1C3C6E253F7DB</string>
-			<key>remoteInfo</key>
-			<string>Motis</string>
 		</dict>
 		<key>0E4329023E2ADE31B6ED434F9063CDBF</key>
 		<dict>
@@ -352,51 +319,6 @@
 			<key>remoteInfo</key>
 			<string>AFNetworking</string>
 		</dict>
-		<key>128ABD870C84AF8FA31EE59C69EBCD14</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppUITests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>12EB3B5DEDBB68FDD96AADE5A8B8A24B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>EFB8A11B8EF2AEFD3B4273E392C0AF6D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
 		<key>14CD3DFB4A25BAEFB205730FA6750025</key>
 		<dict>
 			<key>fileRef</key>
@@ -410,32 +332,6 @@
 			<string>F9BBD130EEC4E5FAAC03C8CD9776C7C0</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>154B1C84E41A3BE13376FF2A388B0686</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5C3FBD424A66B0C0592C0DEDA6EFB1A9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>15910324829A55B8B804337266B13764</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppTests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>16D0B4358CC9EC7B29553B12A3E5C9BD</key>
 		<dict>
@@ -528,19 +424,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>19927C968009039F54A828DD4E8B5F96</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppTests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>19B32D75A98FF59F1986C825F26306C6</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -610,24 +493,6 @@
 			<string>Collection-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1F6C52FC96587B96C688DA1E89ADA52C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>110E05E6ED451100822211B22A701110</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1F8CB0E304138E857861FE74775FEF01</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>SDWebImage</string>
-			<key>target</key>
-			<string>BEA67963E934CE4220C3917DF0B16719</string>
-			<key>targetProxy</key>
-			<string>5C11618C13522FA5B6613BB01629341E</string>
 		</dict>
 		<key>2053D71CF543C3A3CC47C5409D61923C</key>
 		<dict>
@@ -699,21 +564,6 @@
 			<string>9CC9F75428BE232072139A6329E295EC</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>24C0D9338F6F11C63B7276F507667334</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-WeatherApp.a</string>
-			<key>path</key>
-			<string>libPods-WeatherApp.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>28709B56B0253B81145D354BEF050AC9</key>
 		<dict>
@@ -894,13 +744,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2C0F93D985A4C786715727FEA0BC47C5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9685DD48741B8F96DF2E6016D87EA1F8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>2CF61175AFF939F9AB09F2F73633D74A</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -930,6 +773,21 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>2E2101632227505AD435DA9098567B8A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libSDWebImage.a</string>
+			<key>path</key>
+			<string>libSDWebImage.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>2F0B5B2BF54729E25F644B5292A36A31</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -957,17 +815,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>302EB254C994B075C8FD184E3F54FAAB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Motis</string>
-			<key>target</key>
-			<string>B91C2B1C1E9C37A5EBE1C3C6E253F7DB</string>
-			<key>targetProxy</key>
-			<string>0E0ED42EEC761F0167EB2942E45C7D30</string>
-		</dict>
 		<key>302ECB9208DA6367F246A8BD7AD268A2</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -982,19 +829,6 @@
 			<string>UIKit+AFNetworking/UIKit+AFNetworking.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30B0D75B408AFD51A89732FAEE0C267B</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>B91C2B1C1E9C37A5EBE1C3C6E253F7DB</string>
-			<key>remoteInfo</key>
-			<string>Motis</string>
 		</dict>
 		<key>311C1D7E5CF57FADDF680EC91D51FBDD</key>
 		<dict>
@@ -1029,19 +863,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>31F8AAC4806747EE474EF4B7F6A47616</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppTests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>326A543AD4E39A2DAECA1CD385E3AEA2</key>
 		<dict>
 			<key>fileRef</key>
@@ -1055,38 +876,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>32EF59AF2F853148FDFF0C9E3F2A3207</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3F564434521B143F557F724EF6392DBC</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
 		</dict>
 		<key>3388B300E598EE46CDE2A6521518ED31</key>
 		<dict>
@@ -1158,36 +947,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>381ED2D885BE76AD500D4303345B56F3</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6C07145BA38E79BF96834A7869B931B9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>3E78E338F6CDB64F947B1AE64AD651BD</string>
-				<string>92C00DFF55B3CF8BEDC22F27A66F7791</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>960466F551D53BB53A0016F10914A731</string>
-				<string>BFF85D0E08557D2DC1395D92687B5522</string>
-				<string>4F81ACC6FE9022842A93B84318C049FB</string>
-				<string>564E4825620CAED4CBD2FF64A12CA7BF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-WeatherApp-WeatherAppUITests</string>
-			<key>productName</key>
-			<string>Pods-WeatherApp-WeatherAppUITests</string>
-			<key>productReference</key>
-			<string>8BCAF021D4BAEA7DA70D3CDA2D46E9EF</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>382ACF4B9D5584529B846C987FE90B96</key>
+		<key>371929D9878240948980F2F2E8ECD857</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>archive.ar</string>
@@ -1222,19 +982,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>3886312BCABF19CB278EB9D4E54A169F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppUITests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>38EEA9ED6B922946C54AD6BAC93B73AD</key>
 		<dict>
@@ -1285,19 +1032,6 @@
 			<key>targetProxy</key>
 			<string>93C91C1A816DBAB80140D390189C0BF8</string>
 		</dict>
-		<key>3E78E338F6CDB64F947B1AE64AD651BD</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>2C0F93D985A4C786715727FEA0BC47C5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
 		<key>3E7FE7BE155C3A5D9144BAA6736218AE</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -1323,22 +1057,9 @@
 			<key>productName</key>
 			<string>Pods-WeatherApp</string>
 			<key>productReference</key>
-			<string>24C0D9338F6F11C63B7276F507667334</string>
+			<string>85F7AF06755DFBAC9E8DDE950ED805B7</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>3F564434521B143F557F724EF6392DBC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppUITests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3F80607D7BF50F2379AC7A6355D6E19B</key>
 		<dict>
@@ -1437,6 +1158,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>49765F88759975A7D3A3F84614D120CB</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libCollection.a</string>
+			<key>path</key>
+			<string>libCollection.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>4997EB263CAC34A0F7327A218666D3D3</key>
 		<dict>
 			<key>fileRef</key>
@@ -1524,30 +1260,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Debug</string>
-		</dict>
-		<key>4F81ACC6FE9022842A93B84318C049FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Motis</string>
-			<key>target</key>
-			<string>B91C2B1C1E9C37A5EBE1C3C6E253F7DB</string>
-			<key>targetProxy</key>
-			<string>30B0D75B408AFD51A89732FAEE0C267B</string>
-		</dict>
-		<key>4FFFC6B14E45FDF47D48ED56FB4D0E0F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppUITests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>5006FC418B3ED49CFADBA9773EB650FB</key>
 		<dict>
@@ -1648,17 +1360,6 @@
 			<string>AFNetworking.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>564E4825620CAED4CBD2FF64A12CA7BF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>SDWebImage</string>
-			<key>target</key>
-			<string>BEA67963E934CE4220C3917DF0B16719</string>
-			<key>targetProxy</key>
-			<string>9805437FA89F9BE6739CDC40C41594AB</string>
 		</dict>
 		<key>584BDE3EAC357BE1D0B7B1CE50122F5D</key>
 		<dict>
@@ -1824,39 +1525,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5B88CFAAF39F8C8E120E371914A200F2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5C11618C13522FA5B6613BB01629341E</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>BEA67963E934CE4220C3917DF0B16719</string>
-			<key>remoteInfo</key>
-			<string>SDWebImage</string>
-		</dict>
-		<key>5C3FBD424A66B0C0592C0DEDA6EFB1A9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>110E05E6ED451100822211B22A701110</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
 		<key>5CDC742D36B74E7E95966A7C47661772</key>
 		<dict>
 			<key>fileRef</key>
@@ -1870,25 +1538,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>5D0AF54AD67F8E6221746D98B3683694</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>382ACF4B9D5584529B846C987FE90B96</string>
-				<string>E030E24DAE07F859F09362DF98AFC01F</string>
-				<string>AA51E8B070A55B6F8151028635EC35F0</string>
-				<string>24C0D9338F6F11C63B7276F507667334</string>
-				<string>71ABACB593610FDD95ADDD195BABDDB8</string>
-				<string>8BCAF021D4BAEA7DA70D3CDA2D46E9EF</string>
-				<string>F4B442C2695D8C2EB6D3825A1E4C0C54</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>5D52DB6DF2E6C24CECB0015A9177A2E1</key>
 		<dict>
@@ -1946,35 +1595,6 @@
 			<string>AFNetworking/AFURLSessionManager.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5FA8FB065AB6BC951CB18F938B9986C8</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FCA53741469D08B88763F5AFAB681D1C</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7354DF0843FF2A1963C013C35735719A</string>
-				<string>154B1C84E41A3BE13376FF2A388B0686</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>6D5DECBDC51BB9002E1A79E43D26B2C3</string>
-				<string>978555010ADF38EDBE963AA38AD7A525</string>
-				<string>302EB254C994B075C8FD184E3F54FAAB</string>
-				<string>1F8CB0E304138E857861FE74775FEF01</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-WeatherApp-WeatherAppTests</string>
-			<key>productName</key>
-			<string>Pods-WeatherApp-WeatherAppTests</string>
-			<key>productReference</key>
-			<string>71ABACB593610FDD95ADDD195BABDDB8</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
 		</dict>
 		<key>6083F51989A0009C740D92767F4DC1FC</key>
 		<dict>
@@ -2057,18 +1677,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>66948E7C98B971F44D71B4A4F43DBC17</key>
+		<key>66DD853DD477D7EAB4C5DD319DE2E976</key>
 		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
+			<key>includeInIndex</key>
 			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>B8CE0A973F092C4F209C883C2A809607</string>
-			<key>remoteInfo</key>
-			<string>Collection</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-WeatherApp-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>681BECB74393A6F98DC2056D3F28909B</key>
 		<dict>
@@ -2084,33 +1704,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6841E112591CF0F3970E48731071C9CB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-WeatherApp.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C07145BA38E79BF96834A7869B931B9</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>32EF59AF2F853148FDFF0C9E3F2A3207</string>
-				<string>7EBF6B34C16D9C070C7C0C19D665F238</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
 		<key>6D3A586BB0A4E53A0E06052AA6E54EA1</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -2125,17 +1718,6 @@
 			<string>SDWebImage/SDWebImageDecoder.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6D5DECBDC51BB9002E1A79E43D26B2C3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>AFNetworking</string>
-			<key>target</key>
-			<string>928353533005A4198EBDA5B700D37B64</string>
-			<key>targetProxy</key>
-			<string>09AAD64E4F4103400087170C054C1668</string>
 		</dict>
 		<key>6EC97BDB3FC508526F9E388095A7DDCC</key>
 		<dict>
@@ -2197,21 +1779,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>71ABACB593610FDD95ADDD195BABDDB8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-WeatherApp-WeatherAppTests.a</string>
-			<key>path</key>
-			<string>libPods-WeatherApp-WeatherAppTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>71C2D794EB66BD599ACEC3EBDA3B3248</key>
 		<dict>
 			<key>fileRef</key>
@@ -2225,32 +1792,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>7354DF0843FF2A1963C013C35735719A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>069D6DD536E851162E2E2344F2C96E96</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>74C99C2E433D58581000E36C148934C1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppTests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>77CF2A7107BC61A2E90025871305961D</key>
 		<dict>
@@ -2317,19 +1858,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7B4FCF537BFCDD4CDB55FB049E5C418A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>7BABC540501D9A269990773C23E05E1A</key>
 		<dict>
 			<key>fileRef</key>
@@ -2343,19 +1871,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>7BB7D2AD875C3835B74669DAF0602D29</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppTests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>7D118BABCAB55C995207E60F479B123A</key>
 		<dict>
@@ -2375,8 +1890,8 @@
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>0F75DF6C7C5F002280EC53F48E80B587</string>
 				<string>EE9355FD2D3C847BE1772756C1523D0F</string>
-				<string>5D0AF54AD67F8E6221746D98B3683694</string>
-				<string>8F3507A99A5CAFFDC32E301248352897</string>
+				<string>9CE31D162D2BEDC340A746C8D40BF0B0</string>
+				<string>BB155DF60D054D2E4A69EB0330704AC0</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -2386,41 +1901,9 @@
 		<key>7EB308652808CE75D43BE58A2FC58400</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7B4FCF537BFCDD4CDB55FB049E5C418A</string>
+			<string>0B592DEE4E1A1F661D1E38CA1B80726D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>7EBF6B34C16D9C070C7C0C19D665F238</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>A1BC917522745BDC4E3B5455741C452A</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
 		</dict>
 		<key>7F0578A0258E02384F6229C678E60D31</key>
 		<dict>
@@ -2441,19 +1924,6 @@
 			<string>SDWebImagePrefetcher.h</string>
 			<key>path</key>
 			<string>SDWebImage/SDWebImagePrefetcher.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>825BB2730F6438B119B6D9AB3002EBA3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-frameworks.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2519,6 +1989,21 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>85F7AF06755DFBAC9E8DDE950ED805B7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-WeatherApp.a</string>
+			<key>path</key>
+			<string>libPods-WeatherApp.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>85FAB6F1D2FE0598BF2E61D7BB084B8D</key>
 		<dict>
 			<key>fileRef</key>
@@ -2561,21 +2046,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>8BCAF021D4BAEA7DA70D3CDA2D46E9EF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-WeatherApp-WeatherAppUITests.a</string>
-			<key>path</key>
-			<string>libPods-WeatherApp-WeatherAppUITests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>8BE2B2BFB34DC445E4296E1160A913FB</key>
 		<dict>
@@ -2648,6 +2118,19 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>8DC5A37D6A59DB972599B07B01A0A0DA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-WeatherApp-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>8E82178CC9BD8BE3DBF2C10E33807AEB</key>
 		<dict>
 			<key>fileRef</key>
@@ -2681,25 +2164,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8F3507A99A5CAFFDC32E301248352897</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FF173D1EE61B5FDCA8A263A420A2AD54</string>
-				<string>EA7A5B73C6DBFF187EDE315DAE9B472B</string>
-				<string>9FEE25509CB49D29475F2E1CAF39BAEF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>8F46D46BE50DEB6331CB1D642F6567EC</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>6841E112591CF0F3970E48731071C9CB</string>
+			<string>AF1394C6121A72850509CD03A6EAA7B7</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -2838,22 +2306,22 @@
 			<key>productName</key>
 			<string>AFNetworking</string>
 			<key>productReference</key>
-			<string>382ACF4B9D5584529B846C987FE90B96</string>
+			<string>371929D9878240948980F2F2E8ECD857</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
-		<key>92C00DFF55B3CF8BEDC22F27A66F7791</key>
+		<key>935FD52B904F81E71142920B897766DA</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1F6C52FC96587B96C688DA1E89ADA52C</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-WeatherApp-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>93C91C1A816DBAB80140D390189C0BF8</key>
 		<dict>
@@ -2867,54 +2335,6 @@
 			<string>B91C2B1C1E9C37A5EBE1C3C6E253F7DB</string>
 			<key>remoteInfo</key>
 			<string>Motis</string>
-		</dict>
-		<key>960466F551D53BB53A0016F10914A731</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>AFNetworking</string>
-			<key>target</key>
-			<string>928353533005A4198EBDA5B700D37B64</string>
-			<key>targetProxy</key>
-			<string>F4062A1BBBFDA9045DB4DF9EA502E615</string>
-		</dict>
-		<key>9685DD48741B8F96DF2E6016D87EA1F8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppUITests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>978555010ADF38EDBE963AA38AD7A525</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Collection</string>
-			<key>target</key>
-			<string>B8CE0A973F092C4F209C883C2A809607</string>
-			<key>targetProxy</key>
-			<string>66948E7C98B971F44D71B4A4F43DBC17</string>
-		</dict>
-		<key>9805437FA89F9BE6739CDC40C41594AB</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>BEA67963E934CE4220C3917DF0B16719</string>
-			<key>remoteInfo</key>
-			<string>SDWebImage</string>
 		</dict>
 		<key>9A10C9BC2EAECB3B8DA579F10A8A4A00</key>
 		<dict>
@@ -3002,6 +2422,23 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>9CE31D162D2BEDC340A746C8D40BF0B0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>371929D9878240948980F2F2E8ECD857</string>
+				<string>49765F88759975A7D3A3F84614D120CB</string>
+				<string>B403F8BF37B9ACD5E466EFA0697501AA</string>
+				<string>85F7AF06755DFBAC9E8DDE950ED805B7</string>
+				<string>2E2101632227505AD435DA9098567B8A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>9E1F7752361AAB9F9B613600FA92B966</key>
 		<dict>
 			<key>fileRef</key>
@@ -3016,27 +2453,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>9FEE25509CB49D29475F2E1CAF39BAEF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4FFFC6B14E45FDF47D48ED56FB4D0E0F</string>
-				<string>AF5CD9402B5705F0A46257B54FBF6350</string>
-				<string>9685DD48741B8F96DF2E6016D87EA1F8</string>
-				<string>3886312BCABF19CB278EB9D4E54A169F</string>
-				<string>128ABD870C84AF8FA31EE59C69EBCD14</string>
-				<string>3F564434521B143F557F724EF6392DBC</string>
-				<string>A1BC917522745BDC4E3B5455741C452A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-WeatherApp-WeatherAppUITests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-WeatherApp-WeatherAppUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>A0446367DC936FB8973C30E76CD769AE</key>
 		<dict>
 			<key>containerPortal</key>
@@ -3050,16 +2466,24 @@
 			<key>remoteInfo</key>
 			<string>SDWebImage</string>
 		</dict>
-		<key>A1BC917522745BDC4E3B5455741C452A</key>
+		<key>A0E4D521DD24D076CB56746C8C31485E</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>BBED2EE7D12C021AB284D43E2F7CEF33</string>
+				<string>66DD853DD477D7EAB4C5DD319DE2E976</string>
+				<string>0B592DEE4E1A1F661D1E38CA1B80726D</string>
+				<string>8DC5A37D6A59DB972599B07B01A0A0DA</string>
+				<string>935FD52B904F81E71142920B897766DA</string>
+				<string>AF1394C6121A72850509CD03A6EAA7B7</string>
+				<string>F898A82D8DAE367C1BBCA9981135CCE8</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-WeatherApp</string>
 			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppUITests.release.xcconfig</string>
+			<string>Target Support Files/Pods-WeatherApp</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3145,19 +2569,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A7BC7847FC772B96642390EDF4D07D70</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>B8CE0A973F092C4F209C883C2A809607</string>
-			<key>remoteInfo</key>
-			<string>Collection</string>
-		</dict>
 		<key>A8A3976EC7DF532073E175F393177A3B</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -3186,21 +2597,6 @@
 			<string>597FBFD149D279B140D716E4B97E4073</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>AA51E8B070A55B6F8151028635EC35F0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libMotis.a</string>
-			<key>path</key>
-			<string>libMotis.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>AAFB5D9E74E2AA0F3CC4712A34DCDB2E</key>
 		<dict>
@@ -3279,16 +2675,16 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>AF5CD9402B5705F0A46257B54FBF6350</key>
+		<key>AF1394C6121A72850509CD03A6EAA7B7</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppUITests-acknowledgements.plist</string>
+			<string>Pods-WeatherApp.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3327,6 +2723,21 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>B403F8BF37B9ACD5E466EFA0697501AA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libMotis.a</string>
+			<key>path</key>
+			<string>libMotis.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>B4643DBDDCADE2B05A630C5F8A18FD03</key>
 		<dict>
 			<key>baseConfigurationReference</key>
@@ -3360,19 +2771,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
-		</dict>
-		<key>B4FEA957A4AADCB68EE79C780695D0B0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-WeatherApp.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>B51AA1F7701DCDBCC9B88A15320F9C2C</key>
 		<dict>
@@ -3414,38 +2812,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>B660B7D61F7B880F64F6837999CAF94C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>CE1F73DE3A8F79D3A485A3771A7F44F5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
 		</dict>
 		<key>B6874F0110B187F1387183E57C7B6783</key>
 		<dict>
@@ -3498,7 +2864,7 @@
 			<key>productName</key>
 			<string>Collection</string>
 			<key>productReference</key>
-			<string>E030E24DAE07F859F09362DF98AFC01F</string>
+			<string>49765F88759975A7D3A3F84614D120CB</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -3523,7 +2889,7 @@
 			<key>productName</key>
 			<string>Motis</string>
 			<key>productReference</key>
-			<string>AA51E8B070A55B6F8151028635EC35F0</string>
+			<string>B403F8BF37B9ACD5E466EFA0697501AA</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -3587,6 +2953,32 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>NSURLSession</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BB155DF60D054D2E4A69EB0330704AC0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A0E4D521DD24D076CB56746C8C31485E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BBED2EE7D12C021AB284D43E2F7CEF33</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-WeatherApp-acknowledgements.markdown</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3668,7 +3060,7 @@
 			<key>productName</key>
 			<string>SDWebImage</string>
 			<key>productReference</key>
-			<string>F4B442C2695D8C2EB6D3825A1E4C0C54</string>
+			<string>2E2101632227505AD435DA9098567B8A</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -3748,17 +3140,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>BFF85D0E08557D2DC1395D92687B5522</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Collection</string>
-			<key>target</key>
-			<string>B8CE0A973F092C4F209C883C2A809607</string>
-			<key>targetProxy</key>
-			<string>A7BC7847FC772B96642390EDF4D07D70</string>
-		</dict>
 		<key>C0F58CA142655A5539AB01BD426CE4ED</key>
 		<dict>
 			<key>containerPortal</key>
@@ -3815,19 +3196,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>C2FE36EB90102BD25F5E625BE1E2D318</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>C45AB1E275F6C9BCB1DB73B5B606D530</key>
 		<dict>
 			<key>children</key>
@@ -3873,19 +3241,6 @@
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
-		</dict>
-		<key>CE1F73DE3A8F79D3A485A3771A7F44F5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>CE8965366A3B07A6C0615055A31B8B83</key>
 		<dict>
@@ -3978,7 +3333,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>5D0AF54AD67F8E6221746D98B3683694</string>
+			<string>9CE31D162D2BEDC340A746C8D40BF0B0</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -3991,8 +3346,6 @@
 				<string>B8CE0A973F092C4F209C883C2A809607</string>
 				<string>B91C2B1C1E9C37A5EBE1C3C6E253F7DB</string>
 				<string>3E7FE7BE155C3A5D9144BAA6736218AE</string>
-				<string>5FA8FB065AB6BC951CB18F938B9986C8</string>
-				<string>381ED2D885BE76AD500D4303345B56F3</string>
 				<string>BEA67963E934CE4220C3917DF0B16719</string>
 			</array>
 		</dict>
@@ -4081,21 +3434,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>E030E24DAE07F859F09362DF98AFC01F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libCollection.a</string>
-			<key>path</key>
-			<string>libCollection.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>E212C2AA95E8F6EFB69A5F1455F291F8</key>
 		<dict>
@@ -4237,27 +3575,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EA7A5B73C6DBFF187EDE315DAE9B472B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7BB7D2AD875C3835B74669DAF0602D29</string>
-				<string>74C99C2E433D58581000E36C148934C1</string>
-				<string>15910324829A55B8B804337266B13764</string>
-				<string>31F8AAC4806747EE474EF4B7F6A47616</string>
-				<string>19927C968009039F54A828DD4E8B5F96</string>
-				<string>EFB8A11B8EF2AEFD3B4273E392C0AF6D</string>
-				<string>CE1F73DE3A8F79D3A485A3771A7F44F5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-WeatherApp-WeatherAppTests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-WeatherApp-WeatherAppTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>EAC53E3D9E4434D11D1D7B7DB77973EA</key>
 		<dict>
 			<key>fileRef</key>
@@ -4354,19 +3671,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>EFB8A11B8EF2AEFD3B4273E392C0AF6D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-WeatherApp-WeatherAppTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>F1056191B0D84038C7442A40997FE547</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -4412,7 +3716,7 @@
 		<key>F3D1200CE219AD4638DD4F6469E49ECA</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>B4FEA957A4AADCB68EE79C780695D0B0</string>
+			<string>F898A82D8DAE367C1BBCA9981135CCE8</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -4440,34 +3744,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
-		</dict>
-		<key>F4062A1BBBFDA9045DB4DF9EA502E615</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>928353533005A4198EBDA5B700D37B64</string>
-			<key>remoteInfo</key>
-			<string>AFNetworking</string>
-		</dict>
-		<key>F4B442C2695D8C2EB6D3825A1E4C0C54</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libSDWebImage.a</string>
-			<key>path</key>
-			<string>libSDWebImage.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>F4C83FCA782B3FF12C18993FE0F0D958</key>
 		<dict>
@@ -4541,6 +3817,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>F898A82D8DAE367C1BBCA9981135CCE8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-WeatherApp.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>F8DD41C4C81FD52C574696C10E69570F</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -4593,47 +3882,12 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FCA53741469D08B88763F5AFAB681D1C</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>12EB3B5DEDBB68FDD96AADE5A8B8A24B</string>
-				<string>B660B7D61F7B880F64F6837999CAF94C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
 		<key>FCDDD3BC67EA205C87238A2A87D5C36C</key>
 		<dict>
 			<key>fileRef</key>
 			<string>5ED07E73A5AB848B8D68D564CB6FA75E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>FF173D1EE61B5FDCA8A263A420A2AD54</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>05E7D9D438AEE8DE353EEF49F74C56EF</string>
-				<string>5B88CFAAF39F8C8E120E371914A200F2</string>
-				<string>7B4FCF537BFCDD4CDB55FB049E5C418A</string>
-				<string>825BB2730F6438B119B6D9AB3002EBA3</string>
-				<string>C2FE36EB90102BD25F5E625BE1E2D318</string>
-				<string>6841E112591CF0F3970E48731071C9CB</string>
-				<string>B4FEA957A4AADCB68EE79C780695D0B0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-WeatherApp</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-WeatherApp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>FF20EF615F542CFE276EC9A493F611C9</key>
 		<dict>

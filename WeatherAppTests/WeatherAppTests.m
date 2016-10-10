@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "PGAPICaller.h"
+#import "PGConstants.h"
 
 @interface WeatherAppTests : XCTestCase
 
@@ -17,6 +19,7 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    
 }
 
 - (void)tearDown {
@@ -27,6 +30,12 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    [PGAPICaller fetchAutoSuggestionsForText:@"&^%&^%^&*%*%*%*" successCallback:^(NSArray *locationsArray) {
+        
+    } errorCallback:^(NSError *error, NSString *errorMsg) {
+        Show_ErrorMessage(errorMsg);
+    }];
 }
 
 - (void)testPerformanceExample {

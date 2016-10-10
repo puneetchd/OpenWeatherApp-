@@ -12,12 +12,6 @@ target 'WeatherApp' do
   pod 'SDWebImage', '~>3.8'
   pod 'Collection'
 
-  target 'WeatherAppTests' do
-    # Pods for testing
-  end
-
-  target 'WeatherAppUITests' do
-    # Pods for testing
-  end
+  
 
 end
