@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface PGWeatherAppUtils : NSObject
 
@@ -19,5 +20,9 @@
 #pragma mark - XML to JSON COnverter
 
 + (void)convertXMLToJSONForResponse:(id)jsonObject;
+
+#pragma mark - Alert Utility
+
++ (void)showAlertForMessage:(NSString*)message;
 
 @end

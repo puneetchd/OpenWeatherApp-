@@ -9,15 +9,7 @@
 #ifndef PGConstants_h
 #define PGConstants_h
 
-#define kWeatherAPIkey             @"9b92138967754e629ea121816160910"
-
-#define Show_ErrorMessage(Message) UIAlertView *alert = [[UIAlertView alloc]initWithTitle:Message message:nil delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];[alert show];
-#define kNOInternetMessage         @"No Internet Connection."
 #define kNOResultsMessage          @"Unable to find any mathcing weather location to the query submitted!"
-
-#define kWeatherAPIBaseURL         @"http://api.worldweatheronline.com/premium/v1/"
-#define kSearchAPI                 @"search.ashx"
-#define kWeatherAPI                @"weather.ashx"
 
 #define kIconURL                   @"IconURL"
 #define kObvTime                   @"ObsvTime"

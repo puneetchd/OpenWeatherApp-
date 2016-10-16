@@ -37,6 +37,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>API_KEY</key>
+	<string>${Weather_Api_Key}</string>
+	<key>API_BASE_URL</key>
+	<string>${Weather_Api_URL}</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

@@ -8,6 +8,7 @@
 
 #import "PGWeatherDetailsViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "PGWeatherAppUtils.h"
 #import "PGAPICaller.h"
 #import "PGConstants.h"
 
@@ -58,7 +59,7 @@
             }
         } errorCallback:^(NSError *error, NSString *errorMsg) {
             [activityIndicator stopAnimating];
-            Show_ErrorMessage(errorMsg);
+            [PGWeatherAppUtils showAlertForMessage:errorMsg];
         }];
     }
 }

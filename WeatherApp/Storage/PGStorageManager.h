@@ -14,5 +14,6 @@
 - (NSArray*)getLastSearchResults;
 - (NSString *)dataFilePath;
 - (BOOL)addSearchStringToStorage:(NSString*)searchString;
+- (NSArray*)filteredArray:(NSArray*)inputArray forSearchString:(NSString*)searchString;
 
 @end

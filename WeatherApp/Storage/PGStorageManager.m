@@ -44,7 +44,15 @@ static NSString* filePath = nil;
     NSArray *rawArray = [defaults objectForKey:kStoredSearchQueries];
     NSMutableArray *resultsArray = [[NSMutableArray alloc]init];
     for (id dataObj in rawArray) {
-        [resultsArray addObject:[NSKeyedUnarchiver unarchiveObjectWithData:dataObj]];
+        [resultsArray insertObject:[NSKeyedUnarchiver unarchiveObjectWithData:dataObj] atIndex:0];
+    }
+    
+    if (resultsArray.count > 10) {
+        resultsArray = [[NSMutableArray alloc]initWithArray:[resultsArray subarrayWithRange:NSMakeRange(0, 10)]];
+    }
+    else
+    {
+        resultsArray = resultsArray;
     }
     
     return resultsArray;
@@ -83,6 +91,15 @@ static NSString* filePath = nil;
     writeStatus = [plistArray writeToFile:[self dataFilePath] atomically:YES];
     
     return writeStatus;*/
+}
+
+- (NSArray*)filteredArray:(NSArray*)inputArray forSearchString:(NSString*)searchString
+{
+    NSArray* matchesArray = [inputArray filter:^BOOL(PGDataLocation *locationData) {
+        return [[[locationData.areaName.firstObject objectForKey:@"value"] uppercaseString] isEqualToString:[searchString uppercaseString]];
+    }];
+    
+    return matchesArray;
 }
 
 @end

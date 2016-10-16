@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "PGAPICaller.h"
 #import "PGConstants.h"
+#import "PGWeatherAppUtils.h"
 
 @interface WeatherAppTests : XCTestCase
 
@@ -34,7 +35,7 @@
     [PGAPICaller fetchAutoSuggestionsForText:@"&^%&^%^&*%*%*%*" successCallback:^(NSArray *locationsArray) {
         
     } errorCallback:^(NSError *error, NSString *errorMsg) {
-        Show_ErrorMessage(errorMsg);
+        [PGWeatherAppUtils showAlertForMessage:errorMsg];
     }];
 }
 

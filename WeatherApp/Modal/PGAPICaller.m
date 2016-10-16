@@ -14,8 +14,13 @@
 #define kDefaultErrorMessage                @"Something went wrong!"
 #define kJSONFormat                         @"json"
 #define kXMLFormat                          @"xml"
+#define kSearchAPI                          @"search.ashx"
+#define kWeatherAPI                         @"weather.ashx"
+#define kNOInternetMessage                  @"No Internet Connection."
 
 static AFHTTPSessionManager *sharedInstance = nil;
+static NSString *apiKey = nil;
+static NSString *baseURL = nil;
 
 @implementation PGAPICaller
 
@@ -28,6 +33,8 @@ static AFHTTPSessionManager *sharedInstance = nil;
         sharedInstance = [[AFHTTPSessionManager alloc]init];
         sharedInstance.requestSerializer = [AFJSONRequestSerializer serializer];
         [sharedInstance.operationQueue setMaxConcurrentOperationCount:5];
+        apiKey = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"API_KEY"];
+        baseURL = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"API_BASE_URL"];
     }
     return sharedInstance;
 }
@@ -35,15 +42,15 @@ static AFHTTPSessionManager *sharedInstance = nil;
 + (void)fetchAutoSuggestionsForText:(NSString*)inputText successCallback:(void (^)(NSArray *locationsArray)) successCallback   errorCallback:(void (^)(NSError * error, NSString *errorMsg)) errorCallback
 {
     if (![PGWeatherAppUtils isInternetReachable]) {
-        Show_ErrorMessage(kNOInternetMessage);
+        [PGWeatherAppUtils showAlertForMessage:kNOInternetMessage];
         return;
     }
     
     AFHTTPSessionManager *sessionManager = [self sharedSessionManager];
     
-    NSDictionary *parametersDict = @{@"key":kWeatherAPIkey,@"q":inputText,@"format":kJSONFormat};
+    NSDictionary *parametersDict = @{@"key":apiKey,@"q":inputText,@"format":kJSONFormat};
     
-    [sessionManager GET:[kWeatherAPIBaseURL stringByAppendingString:kSearchAPI] parameters:parametersDict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [sessionManager GET:[baseURL stringByAppendingString:kSearchAPI] parameters:parametersDict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (responseObject) {
             NSArray *responseArray =  [PGWeatherAppUtils getArrayFromJsonDataUsingORMModel:[[responseObject objectForKey:@"search_api"] objectForKey:@"result"] forClassModel:[PGDataLocation class]];
@@ -63,15 +70,15 @@ static AFHTTPSessionManager *sharedInstance = nil;
 + (void)fetchWeatherDetailForLocation:(NSString*)locationString successCallback:(void (^)(NSDictionary *detailsDict)) successCallback   errorCallback:(void (^)(NSError * error, NSString *errorMsg)) errorCallback
 {
     if (![PGWeatherAppUtils isInternetReachable]) {
-        Show_ErrorMessage(kNOInternetMessage);
+        [PGWeatherAppUtils showAlertForMessage:kNOInternetMessage];
         return;
     }
     
     AFHTTPSessionManager *sessionManager = [self sharedSessionManager];
     
-    NSDictionary *parametersDict = @{@"key":kWeatherAPIkey,@"q":locationString,@"format":kJSONFormat};
+    NSDictionary *parametersDict = @{@"key":apiKey,@"q":locationString,@"format":kJSONFormat};
     
-    [sessionManager GET:[kWeatherAPIBaseURL stringByAppendingString:kWeatherAPI] parameters:parametersDict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [sessionManager GET:[baseURL stringByAppendingString:kWeatherAPI] parameters:parametersDict progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (responseObject)
         {

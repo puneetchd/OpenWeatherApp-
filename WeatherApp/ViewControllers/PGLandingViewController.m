@@ -13,6 +13,7 @@
 #import "PGDataLocation.h"
 #import <NSArray+Collection.h>
 #import "PGStorageManager.h"
+#import "PGWeatherAppUtils.h"
 
 @interface PGLandingViewController ()<UISearchBarDelegate>
 {
@@ -45,15 +46,7 @@
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {
     [searchBar setShowsCancelButton:YES animated:YES];
-    NSArray *resultsArray = [[PGStorageManager storageManager] getLastSearchResults];
-    if (resultsArray.count > 10) {
-        locSuggestionsArray = [resultsArray subarrayWithRange:NSMakeRange(0, 10)];
-    }
-    else
-    {
-        locSuggestionsArray = resultsArray;
-    }
-    
+    locSuggestionsArray = [[PGStorageManager storageManager] getLastSearchResults];
     [_locTableView reloadData];
 }
 
@@ -69,7 +62,7 @@
             [_locTableView reloadData];
         } errorCallback:^(NSError *error, NSString *errorMsg) {
             [activityIndicator stopAnimating];
-            Show_ErrorMessage(errorMsg);
+            [PGWeatherAppUtils showAlertForMessage:errorMsg];
         }];
     }
 }
@@ -85,12 +78,10 @@
     [_searchBar resignFirstResponder];
     [self.view endEditing:YES];
     
-    NSArray* matchesArray = [locSuggestionsArray filter:^BOOL(PGDataLocation *locationData) {
-        return [[[locationData.areaName.firstObject objectForKey:@"value"] uppercaseString] isEqualToString:[searchBar.text uppercaseString]];
-    }];
+    NSArray* matchesArray = [[PGStorageManager storageManager] filteredArray:locSuggestionsArray forSearchString:searchBar.text];
 
     if (matchesArray.count == 0) {
-        Show_ErrorMessage(kNOResultsMessage);
+        [PGWeatherAppUtils showAlertForMessage:kNOResultsMessage];
     }
     else
     {
