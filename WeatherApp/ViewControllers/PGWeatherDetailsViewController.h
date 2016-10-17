@@ -11,5 +11,8 @@
 @interface PGWeatherDetailsViewController : UIViewController
 
 @property (nonatomic, strong) NSString *locationString;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+- (void)fetchWeatherDetails;
 
 @end

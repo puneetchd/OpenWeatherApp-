@@ -16,6 +16,19 @@ PODS:
     - AFNetworking/NSURLSession
   - Collection (1.4)
   - Motis (1.4.3)
+  - OHHTTPStubs (5.2.1):
+    - OHHTTPStubs/Default (= 5.2.1)
+  - OHHTTPStubs/Core (5.2.1)
+  - OHHTTPStubs/Default (5.2.1):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (5.2.1):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (5.2.1):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (5.2.1)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -24,14 +37,14 @@ DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - Collection
   - Motis (~> 1.4.0)
+  - OHHTTPStubs
   - SDWebImage (~> 3.8)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Collection: 499c924583128016337272b6e1afb5a58433ff1c
   Motis: c9440ea861d7530d20eb4643adcabd55cfebc44b
+  OHHTTPStubs: 3a42f25c00563b71355ac73112ba2324e9e6cef4
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: 0e573310e099bf62536857ad78771b0bfd8d7c78
-
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 0.39.0

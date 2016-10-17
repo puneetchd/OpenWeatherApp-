@@ -112,9 +112,12 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifer];
     }
     
-    PGDataLocation *dataLocation = [locSuggestionsArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",[[dataLocation.areaName firstObject] objectForKey:@"value"]];
-    cell.detailTextLabel.text = [[dataLocation.country firstObject] objectForKey:@"value"];
+    if (locSuggestionsArray.count > 0) {
+        PGDataLocation *dataLocation = [locSuggestionsArray objectAtIndex:indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@",[[dataLocation.areaName firstObject] objectForKey:@"value"]];
+        cell.detailTextLabel.text = [[dataLocation.country firstObject] objectForKey:@"value"];
+    }
+    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;

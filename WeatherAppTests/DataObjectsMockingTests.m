@@ -1,26 +1,23 @@
 //
-//  WeatherAppTests.m
-//  WeatherAppTests
+//  DataObjectsMockingTests.m
+//  WeatherApp
 //
-//  Created by Puneet Sharma on 09/10/16.
+//  Created by Puneet Sharma on 17/10/16.
 //  Copyright © 2016 Puneet Sharma. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import "PGAPICaller.h"
-#import "PGConstants.h"
-#import "PGWeatherAppUtils.h"
+#import "PGDataLocation.h"
 
-@interface WeatherAppTests : XCTestCase
+@interface DataObjectsMockingTests : XCTestCase
 
 @end
 
-@implementation WeatherAppTests
+@implementation DataObjectsMockingTests
 
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    
 }
 
 - (void)tearDown {
@@ -28,15 +25,14 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testDataObjectsMockingTests {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
-    [PGAPICaller fetchAutoSuggestionsForText:@"&^%&^%^&*%*%*%*" successCallback:^(NSArray *locationsArray) {
-        
-    } errorCallback:^(NSError *error, NSString *errorMsg) {
-        [PGWeatherAppUtils showAlertForMessage:errorMsg];
-    }];
+    PGDataLocation *dataLoc = [[PGDataLocation alloc]init];
+    dataLoc.areaName = nil;
+    dataLoc.region = nil;
+    dataLoc.country = nil;
 }
 
 - (void)testPerformanceExample {

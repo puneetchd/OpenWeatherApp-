@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8EF4E45BBA5BFB737120E460'
-               BlueprintName = 'Motis'
+               BlueprintIdentifier = 'E310F0E13AE62EB6F4264985'
+               BlueprintName = 'OHHTTPStubs'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libMotis.a'>
+               BuildableName = 'libOHHTTPStubs.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -19,8 +19,6 @@
     NSDictionary *weatherDetailsDict;
 }
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-
 @end
 
 @implementation PGWeatherDetailsViewController

@@ -60,6 +60,9 @@ static NSString* filePath = nil;
 
 - (BOOL)addSearchStringToStorage:(NSString*)searchString
 {
+    if (searchString.length == 0) {
+        return NO;
+    }
     NSArray* matchesArray = [[self getLastSearchResults] filter:^BOOL(PGDataLocation *locationData) {
         return [[[locationData.areaName.firstObject objectForKey:@"value"] uppercaseString] isEqualToString:[searchString uppercaseString]];
     }];

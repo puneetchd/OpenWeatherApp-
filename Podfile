@@ -6,12 +6,10 @@ target 'WeatherApp' do
   # use_frameworks!
 
   # Pods for WeatherApp
-
   pod 'AFNetworking', '~> 3.0'
   pod 'Motis', '~>1.4.0'
   pod 'SDWebImage', '~>3.8'
   pod 'Collection'
-
-  
+  pod 'OHHTTPStubs'
 
 end
